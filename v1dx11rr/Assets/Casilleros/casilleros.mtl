@@ -1,0 +1,14 @@
+# Blender 4.0.2 MTL File: 'None'
+# www.blender.org
+
+newmtl Material.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Casillero_low_DefaultMaterial_BaseColor.10.png
+map_Ns textures/Casillero_low_DefaultMaterial_Roughness.10.png
+map_refl textures/Casillero_low_DefaultMaterial_Metallic.100.png
+map_Bump -bm 1.000000 textures/Casillero_low_DefaultMaterial_Normal.1001.png
