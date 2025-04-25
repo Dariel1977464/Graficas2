@@ -21,6 +21,9 @@ public:
 	int ancho;
 	int alto;
 
+	float XAnte = 0.0f;
+	float ZAnte = 0.0f;
+
 	Camara(D3DXVECTOR3 eye, D3DXVECTOR3 target, D3DXVECTOR3 up, int Ancho, int Alto)
 	{
 		//posicion de la camara
@@ -83,6 +86,11 @@ public:
 		
 
 		//ajustamos la matriz de vista con lo obtenido
+
+		XAnte = posCam.x;
+		ZAnte = posCam.z;
+
+
 		posCam += refFront * vel/10.0;
 		hdveo = posCam + refFront;
 		D3DXMatrixLookAtLH(&vista, &posCam, &hdveo, &refUp);

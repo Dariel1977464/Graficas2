@@ -1,2 +1,472 @@
 ﻿D:\VisualStudio\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Terreno.vcxproj, TerrenoSky.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  TerrenoSkyBill.cpp
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(12,9): warning C4005: 'DXGI_STATUS_OCCLUDED': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57398,9):
+      see previous definition of 'DXGI_STATUS_OCCLUDED'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(13,9): warning C4005: 'DXGI_STATUS_CLIPPED': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57407,9):
+      see previous definition of 'DXGI_STATUS_CLIPPED'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(14,9): warning C4005: 'DXGI_STATUS_NO_REDIRECTION': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57416,9):
+      see previous definition of 'DXGI_STATUS_NO_REDIRECTION'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(15,9): warning C4005: 'DXGI_STATUS_NO_DESKTOP_ACCESS': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57425,9):
+      see previous definition of 'DXGI_STATUS_NO_DESKTOP_ACCESS'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(16,9): warning C4005: 'DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57434,9):
+      see previous definition of 'DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(17,9): warning C4005: 'DXGI_STATUS_MODE_CHANGED': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57443,9):
+      see previous definition of 'DXGI_STATUS_MODE_CHANGED'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(18,9): warning C4005: 'DXGI_STATUS_MODE_CHANGE_IN_PROGRESS': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57452,9):
+      see previous definition of 'DXGI_STATUS_MODE_CHANGE_IN_PROGRESS'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(21,9): warning C4005: 'DXGI_ERROR_INVALID_CALL': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57467,9):
+      see previous definition of 'DXGI_ERROR_INVALID_CALL'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(22,9): warning C4005: 'DXGI_ERROR_NOT_FOUND': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57476,9):
+      see previous definition of 'DXGI_ERROR_NOT_FOUND'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(23,9): warning C4005: 'DXGI_ERROR_MORE_DATA': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57485,9):
+      see previous definition of 'DXGI_ERROR_MORE_DATA'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(24,9): warning C4005: 'DXGI_ERROR_UNSUPPORTED': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57494,9):
+      see previous definition of 'DXGI_ERROR_UNSUPPORTED'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(25,9): warning C4005: 'DXGI_ERROR_DEVICE_REMOVED': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57503,9):
+      see previous definition of 'DXGI_ERROR_DEVICE_REMOVED'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(26,9): warning C4005: 'DXGI_ERROR_DEVICE_HUNG': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57512,9):
+      see previous definition of 'DXGI_ERROR_DEVICE_HUNG'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(27,9): warning C4005: 'DXGI_ERROR_DEVICE_RESET': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57522,9):
+      see previous definition of 'DXGI_ERROR_DEVICE_RESET'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(28,9): warning C4005: 'DXGI_ERROR_WAS_STILL_DRAWING': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57531,9):
+      see previous definition of 'DXGI_ERROR_WAS_STILL_DRAWING'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(29,9): warning C4005: 'DXGI_ERROR_FRAME_STATISTICS_DISJOINT': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57541,9):
+      see previous definition of 'DXGI_ERROR_FRAME_STATISTICS_DISJOINT'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(30,9): warning C4005: 'DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57550,9):
+      see previous definition of 'DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(31,9): warning C4005: 'DXGI_ERROR_DRIVER_INTERNAL_ERROR': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57560,9):
+      see previous definition of 'DXGI_ERROR_DRIVER_INTERNAL_ERROR'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(32,9): warning C4005: 'DXGI_ERROR_NONEXCLUSIVE': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57569,9):
+      see previous definition of 'DXGI_ERROR_NONEXCLUSIVE'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(33,9): warning C4005: 'DXGI_ERROR_NOT_CURRENTLY_AVAILABLE': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57578,9):
+      see previous definition of 'DXGI_ERROR_NOT_CURRENTLY_AVAILABLE'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(34,9): warning C4005: 'DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57588,9):
+      see previous definition of 'DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(35,9): warning C4005: 'DXGI_ERROR_REMOTE_OUTOFMEMORY': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57597,9):
+      see previous definition of 'DXGI_ERROR_REMOTE_OUTOFMEMORY'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(917,9): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57875,9):
+      see previous definition of 'D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(918,9): warning C4005: 'D3D11_ERROR_FILE_NOT_FOUND': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57884,9):
+      see previous definition of 'D3D11_ERROR_FILE_NOT_FOUND'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(919,9): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57894,9):
+      see previous definition of 'D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(920,9): warning C4005: 'D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57903,9):
+      see previous definition of 'D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,9): warning C4005: 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57851,9):
+      see previous definition of 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,9): warning C4005: 'D3D10_ERROR_FILE_NOT_FOUND': macro redefinition
+  (compiling source file 'TerrenoSkyBill.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\winerror.h(57860,9):
+      see previous definition of 'D3D10_ERROR_FILE_NOT_FOUND'
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(188,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(189,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(208,85): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(310,63): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(310,51): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(369,15): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(400,27): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(464,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoRR.h(466,19): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Camara.h(40,63): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Camara.h(40,51): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Billboard.h(395,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Billboard.h(396,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2662,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2662,64): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2662,76): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2662,88): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2663,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2663,64): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2663,76): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2664,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2664,64): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2664,76): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2665,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2666,64): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2667,76): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2668,88): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2689,46): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2689,58): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2689,70): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2689,82): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2690,88): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2691,88): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2694,88): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2695,88): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2698,64): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2702,76): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2702,88): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2712,65): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2712,91): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2713,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2713,78): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2715,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2716,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2716,65): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2717,52): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2717,65): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2717,78): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2727,54): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2728,56): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2729,58): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2730,54): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2730,65): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2731,56): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2731,67): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2732,54): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2732,67): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2742,60): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2742,79): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2743,70): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamath.h(2754,73): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathconvert.inl(2254,71): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathconvert.inl(4523,69): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathconvert.inl(4577,68): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathconvert.inl(4639,65): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathconvert.inl(4707,64): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathconvert.inl(4770,64): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathconvert.inl(4832,63): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathvector.inl(1269,45): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathvector.inl(1269,56): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathvector.inl(1269,67): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathvector.inl(1269,78): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathmisc.inl(518,43): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathmisc.inl(519,40): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xnamathmisc.inl(519,51): warning C4838: conversion from 'unsigned int' to 'INT' requires a narrowing conversion
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\ModeloRR.h(297,64): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\ModeloRR.h(297,51): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\ModeloRR.h(357,15): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Text.h(193,29): warning C4244: '=': conversion from 'float' to 'UINT', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Text.h(194,31): warning C4244: '=': conversion from 'float' to 'UINT', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Text.h(184,33): warning C4101: 'renderTargetViewDesc': unreferenced local variable
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Text.h(185,35): warning C4101: 'shaderResourceViewDesc': unreferenced local variable
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Text.h(322,51): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\Text.h(343,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(191,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(164,33): warning C4101: 'renderTargetViewDesc': unreferenced local variable
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(163,24): warning C4101: 'textureDesc': unreferenced local variable
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(165,35): warning C4101: 'shaderResourceViewDesc': unreferenced local variable
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(289,51): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(365,12): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(478,3): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(684,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(685,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(686,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(687,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(695,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(696,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(697,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(698,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(707,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(708,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(709,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(710,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(719,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(720,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(721,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(722,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoSkyBill.cpp(147,15): warning C4244: 'return': conversion from 'WPARAM' to 'int', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoSkyBill.cpp(234,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoSkyBill.cpp(238,70): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\TerrenoSkyBill.cpp(243,33): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\Colisiones.h(32,1): warning C4715: 'Colisiones::hitbox': not all control paths return a value
+D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(159,1): warning C4715: 'GUI::InitScene': not all control paths return a value
+D:\clays\Documents\Graficas2\v1dx11rr\Text.h(179,1): warning C4715: 'Text::InitScene': not all control paths return a value
   v1dx11rr.vcxproj -> D:\clays\Documents\Graficas2\x64\Debug\TerrenoSkyBill.exe

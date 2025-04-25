@@ -99,7 +99,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
                           NULL);
 
     ShowWindow(hWnd, nCmdShow);
-	dxrr = new DXRR(hWnd, 800, 600);
+	dxrr = new DXRR(hWnd, 600, 600);
 	dxrr->vel=0;
     gamePad = new GamePadRR(1);
 
@@ -152,6 +152,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 {
     float xPos = 0;
     float yPos = 0;
+    int Conejo_Escondido = 0;
 
     switch(message)
     {
@@ -174,7 +175,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
             if (dxrr->frameBillboard == 32)
                 dxrr->frameBillboard = 0;
 
-            dxrr->izqder = 0;
+            //dxrr->izqder = 0;
             dxrr->arriaba = 0;
             dxrr->vel = 0;
 
@@ -189,6 +190,25 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
             if (keyboardData[DIK_W] & 0x80) {
                 dxrr->vel = 5.f;
             }
+
+
+            if (keyboardData[DIK_V] & 0x80) {
+                //dxrr->AlturaPrueba -= 0.1f;
+                
+
+                //dxrr->Conejo_Estad_GUI;
+
+                dxrr->Conejo_Estad_GUI = 2;
+
+
+
+
+            }
+            else
+            {
+                dxrr->Conejo_Estad_GUI = 1;
+            }
+
 
             if (keyboardData[DIK_B] & 0x80) {
                 dxrr->breakpoint = true;

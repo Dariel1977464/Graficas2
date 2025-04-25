@@ -11,6 +11,10 @@
 #include "ModeloRR.h"
 #include "XACT3Util.h"
 
+#include "Text.h"
+#include "GUI.h"
+#include "Colisiones.h"
+
 class DXRR {
 
 private:
@@ -36,7 +40,6 @@ public:
 
 	ID3D11BlendState* alphaBlendState, * commonBlendState;
 
-	int frameBillboard;
 
 	TerrenoRR* terreno;
 	SkyDome* skydome;
@@ -57,10 +60,59 @@ public:
 	ModeloRR* pupitre;
 	ModeloRR* tablones;
 
-	float izqder;
-	float arriaba;
-	float vel;
-	bool breakpoint;
+	Colisiones* CAJA;
+
+	GUI* CONEJO_ESTADO_GUI_1;
+	GUI* CONEJO_ESTADO_GUI_2;
+	GUI* CONEJO_ALERTA_NIVEL_0;
+	GUI* CONEJO_ALERTA_NIVEL_1;
+	GUI* CONEJO_ALERTA_NIVEL_2;
+	GUI* CONEJO_ALERTA_NIVEL_3;
+	GUI* CONEJO_ALERTA_NIVEL_4;
+
+
+#pragma region ints
+	int frameBillboard,
+		Conejo_Nivel_Alerta = 0,
+		Conejo_Estad_GUI = 1;
+
+#pragma endregion
+
+
+
+#pragma region floats
+	float izqder,
+	arriaba,
+	vel,
+
+	X_CamaraPrueba,
+	Y_CamaraPrueba,
+	Z_CamaraPrueba,
+
+	PosJugadorX = 0.0f,
+	PosJugadorY = 0.0f,
+	PosJugadorZ = 0.0f;
+
+#pragma endregion
+
+
+#pragma region bools
+	bool breakpoint,
+	Colisionaste;
+
+#pragma endregion
+
+
+
+
+	Text* Texto;
+
+
+
+	
+
+
+
 	vector2 uv1[32];
 	vector2 uv2[32];
 	vector2 uv3[32];
@@ -85,12 +137,26 @@ public:
 		izqder = 0;
 		arriaba = 0;
 		billCargaFuego();
+
+
+		X_CamaraPrueba = 0.0f;
+		Y_CamaraPrueba = 1.0f;
+		Z_CamaraPrueba = 0.0f;
 		camara = new Camara(D3DXVECTOR3(0, 80, 6), D3DXVECTOR3(0, 80, 0), D3DXVECTOR3(0, 1, 0), Ancho, Alto);
+
+
 		terreno = new TerrenoRR(1000, 1000, d3dDevice, d3dContext);
+
+
 		skydome = new SkyDome(32, 32, 100.0f, &d3dDevice, &d3dContext, L"skydome2.jpg");
 		billboard = new BillboardRR(L"Assets/Billboards/fuego-anim.png", L"Assets/Billboards/fuego-anim-normal.png", d3dDevice, d3dContext, 5);
 		conejo = new ModeloRR(d3dDevice, d3dContext, "Assets/Conejo/CONEJO.obj", L"Assets/Conejo/CONEJO_TEXT.jpg", L"Assets/noSpecMap.jpg", 5, 0);
+
 		caja = new ModeloRR(d3dDevice, d3dContext, "Assets/Caja/CAJA.obj", L"Assets/Caja/CAJA_TEXT.jpg", L"Assets/Caja/CAJA_ROUGH.jpg", 10, 0);
+
+		//CAJA = new Colisiones(10.0, terreno->Superficie(0, 0) + 5.0f, 0, 10, 10);
+		
+
 		camion = new ModeloRR(d3dDevice, d3dContext, "Assets/Camion/CAMION.obj", L"Assets/Camion/CamionTEXT.jpg", L"Assets/Camion/CAMION_ROUGH.jpg", -15, -10);
 		arbusto = new ModeloRR(d3dDevice, d3dContext, "Assets/Arbusto/ARBUSTO.obj", L"Assets/Arbusto/ARBUSTO_TEXT.jpg", L"Assets/noSpecMap.jpg", -25, 5);
 		basura = new ModeloRR(d3dDevice, d3dContext, "Assets/Basura/BASURA.obj", L"Assets/Basura/BASURA_TEXT.jpg", L"Assets/Basura/BASURA_ROUGH.jpg", 0, -5);
@@ -100,10 +166,27 @@ public:
 		hacha = new ModeloRR(d3dDevice, d3dContext, "Assets/Hacha/hacha.obj", L"Assets/Hacha/axe_Albedo.png", L"Assets/Hacha/axe_Roughness.png", 8, -5);
 		libreta = new ModeloRR(d3dDevice, d3dContext, "Assets/Libreta/libreta.obj", L"Assets/Libreta/tex1_baseColor.png", L"Assets/noSpecMap.jpg", -12, 5);
 		pizarron = new ModeloRR(d3dDevice, d3dContext, "Assets/Pizarron/pizarron.obj", L"Assets/Pizarron/Whiteboard_BaseColor.png", L"Assets/Pizarron/Whiteboard_Roughness.png", 0, 25);
+
+		CAJA = new Colisiones(0, terreno->Superficie(100, 20), 25, 8, 2);
+
+
+
 		puerta = new ModeloRR(d3dDevice, d3dContext, "Assets/Puerta/PUERTA.obj", L"Assets/Puerta/PUERTA_TEXT.jpg", L"Assets/Puerta/PUERTA_ROUGH.jpg", -20,0);
 		pupitre = new ModeloRR(d3dDevice, d3dContext, "Assets/Pupitre/pupitre.obj", L"Assets/Pupitre/School_desk_col.png", L"Assets/Pupitre/School_desk_rou.png", -30, -25);
 		tablones = new ModeloRR(d3dDevice, d3dContext, "Assets/Tablones/tablones.obj", L"Assets/Tablones/Planks_01_t.png", L"Assets/Tablones/Planks_01_rou.png", -290, -45);
 
+		Texto = new Text(d3dDevice, d3dContext, 3.6f, 1.2f, L"Assets/GUI/font.png", XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f));
+
+#pragma region GUI
+		CONEJO_ESTADO_GUI_1 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_CONEJO_NORMAL.png");
+		CONEJO_ESTADO_GUI_2 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_CONEJO_ESCONDIDO.png");
+
+		CONEJO_ALERTA_NIVEL_0 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_0.png");
+		CONEJO_ALERTA_NIVEL_1 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_1.png");
+		CONEJO_ALERTA_NIVEL_2 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_2.png");
+		CONEJO_ALERTA_NIVEL_3 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_3.png");
+		CONEJO_ALERTA_NIVEL_4 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_4.png");
+#pragma endregion
 
 
 	}
@@ -272,6 +355,10 @@ public:
 
 	void Render(void)
 	{
+		Colisionaste = false;
+		
+		
+#pragma region aaaaaa
 		float sphere[3] = { 0,0,0 };
 		float prevPos[3] = { camara->posCam.x, camara->posCam.z, camara->posCam.z };
 		static float angle = 0.0f;
@@ -294,26 +381,175 @@ public:
 		skydome->Render(camara->posCam);
 		TurnOnDepth();
 		terreno->Draw(camara->vista, camara->proyeccion);
-		//TurnOnAlphaBlending();
-		billboard->Draw(camara->vista, camara->proyeccion, camara->posCam,
-			-11, -78, 4, 5, uv1, uv2, uv3, uv4, frameBillboard);
 
-		//TurnOffAlphaBlending();
+		PosJugadorX = camara->posCam.x;
+		PosJugadorZ = camara->posCam.z;
+
+
+#pragma endregion
+
+
+
+		
+
+
+
+		
+		
+
+
+
+
+
+#pragma region MODELOS
 		conejo->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 10.0f, 0, 'A', 1);
 		caja->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 5.0f, 0, 'A', 1);
 		camion->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 5.0f, 0, 'A', 1);
 		arbusto->Draw(camara->vista, camara->proyeccion, terreno->Superficie(15, 20), camara->posCam, 10.0f, 0, 'A', 1);
 		basura->Draw(camara->vista, camara->proyeccion, terreno->Superficie(-50, -20), camara->posCam, 5.0f, 0, 'A', 1);
 		escuela->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 10.0f, 0, 'A', 4);
-		casilleros->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 5.0f, 0, 'A',3);
+		casilleros->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 5.0f, 0, 'A', 3);
 		escritorio->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 5.0f, 0, 'A', 5);
 		hacha->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 10.0f, 0, 'A', 10);
 		libreta->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, -20), camara->posCam, 5.0f, 0, 'A', 10);
 		pizarron->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 10.0f, 0, 'A', 3);
+
+		if (CAJA->hitbox(PosJugadorX, PosJugadorZ) == true)
+		{
+			//camara->posCam.x = camara->XAnte;
+			//camara->posCam.z = camara->ZAnte;
+
+			Colisionaste = true;
+		}
+
+
+
 		puerta->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 5.0f, 0, 'A', 1);
 		pupitre->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 5.0f, 0, 'A', 4);
 		tablones->Draw(camara->vista, camara->proyeccion, terreno->Superficie(5, 15), camara->posCam, 10.0f, 0, 'A', 8);
+
+#pragma endregion
+
+
+#pragma region COLISIONES
+
 		
+
+
+#pragma endregion
+
+
+
+
+		
+
+
+
+
+		TurnOnAlphaBlending();
+#pragma region GUI
+
+
+		stringstream posX;
+		stringstream posY;
+		stringstream posZ;
+		stringstream ESTADOCOLITEST;
+		stringstream Conejo_Estado;
+
+		posX << camara->posCam.x;
+		posZ << camara->posCam.z;
+		posY << camara->posCam.y;
+		Conejo_Estado << Conejo_Estad_GUI;
+
+		//Colisionaste = true;
+
+		switch (Colisionaste)
+		{
+		case true: {
+			ESTADOCOLITEST << true;
+			break;
+		}
+		case false: {
+			ESTADOCOLITEST << false;
+			break;
+		}
+		default:
+			break;
+		}
+		Texto->DrawText(0.3f, 0.4f, "Estado:  " + Conejo_Estado.str(), 0.01f);
+		Texto->DrawText(0.3f, 0.3f, "Coli:  " + ESTADOCOLITEST.str(), 0.01f);
+		Texto->DrawText(0.3f, 0.2f, "PosX: " + posX.str(), 0.01f);
+		Texto->DrawText(0.3f, 0.1f, "PosZ: " + posZ.str(), 0.01f);
+		Texto->DrawText(0.3f, 0.0f, "PosY: " + posY.str(), 0.01f);
+		
+
+
+		
+
+		switch (Conejo_Nivel_Alerta)
+		{
+		case 0: {
+			CONEJO_ALERTA_NIVEL_0->Draw(-0.77f, 0.0f);
+			break;
+		}
+		case 1: {
+			CONEJO_ALERTA_NIVEL_1->Draw(-0.77f, 0.0f);
+			break;
+		}
+		case 2: {
+			CONEJO_ALERTA_NIVEL_2->Draw(-0.77f, 0.0f);
+			break;
+		}
+		case 3: {
+			CONEJO_ALERTA_NIVEL_3->Draw(-0.77f, 0.0f);
+			break;
+		}
+		case 4: {
+			CONEJO_ALERTA_NIVEL_4->Draw(-0.77f, 0.0f);
+			break;
+		}
+		default:
+			CONEJO_ALERTA_NIVEL_4->Draw(-0.77f, 0.0f);
+			break;
+		}
+
+		switch (Conejo_Estad_GUI)
+		{
+		case 1: {
+			CONEJO_ESTADO_GUI_1->Draw(-0.77f, 0.0f);
+			break;
+		}
+		case 2: {
+			CONEJO_ESTADO_GUI_2->Draw(-0.77f, 0.0f);
+			break;
+		}
+		default:
+			CONEJO_ESTADO_GUI_1->Draw(-0.77f, 0.0f);
+			break;
+		}
+		
+		
+		
+	
+
+
+
+
+#pragma endregion
+
+#pragma region BILLBOARD
+
+		billboard->Draw(camara->vista, camara->proyeccion, camara->posCam,
+			-11, -78, 4, 5, uv1, uv2, uv3, uv4, frameBillboard);
+
+#pragma endregion
+
+
+
+
+		TurnOffAlphaBlending();
+
+
 		swapChain->Present( 1, 0 );
 	}
 
