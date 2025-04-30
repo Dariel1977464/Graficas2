@@ -407,49 +407,34 @@ D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(165,35): warning C4101: 'shaderResou
 D:\clays\Documents\Graficas2\v1dx11rr\GUI.h(289,51): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(365,12): warning C4305: '+=': truncation from 'double' to 'float'
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(370,12): warning C4305: '+=': truncation from 'double' to 'float'
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(478,3): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(483,3): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(684,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(697,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(685,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(698,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(686,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(699,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(687,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(700,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(695,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(708,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(696,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(709,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(697,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(710,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(698,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'TerrenoSkyBill.cpp')
-  
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(707,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'TerrenoSkyBill.cpp')
-  
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(708,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'TerrenoSkyBill.cpp')
-  
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(709,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'TerrenoSkyBill.cpp')
-  
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(710,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'TerrenoSkyBill.cpp')
-  
-D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(719,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(711,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
 D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(720,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
@@ -459,6 +444,21 @@ D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(721,29): warning C4244: '=': conver
   (compiling source file 'TerrenoSkyBill.cpp')
   
 D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(722,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(723,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(732,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(733,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(734,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'TerrenoSkyBill.cpp')
+  
+D:\clays\Documents\Graficas2\v1dx11rr\DXRR.h(735,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'TerrenoSkyBill.cpp')
   
   C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800

@@ -70,6 +70,8 @@ public:
 	GUI* CONEJO_ALERTA_NIVEL_3;
 	GUI* CONEJO_ALERTA_NIVEL_4;
 
+	GUI* CONEJO_CAJA;
+
 
 #pragma region ints
 	int frameBillboard,
@@ -99,6 +101,7 @@ public:
 #pragma region bools
 	bool breakpoint,
 	Colisionaste;
+	bool RenderBoxUI = false;
 
 #pragma endregion
 
@@ -186,6 +189,8 @@ public:
 		CONEJO_ALERTA_NIVEL_2 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_2.png");
 		CONEJO_ALERTA_NIVEL_3 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_3.png");
 		CONEJO_ALERTA_NIVEL_4 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_4.png");
+
+		CONEJO_CAJA = new GUI(d3dDevice, d3dContext, 2.1f, 2.1f, L"Assets/GUI/Caja_UI.png");
 #pragma endregion
 
 
@@ -483,7 +488,7 @@ public:
 		Texto->DrawText(0.3f, 0.0f, "PosY: " + posY.str(), 0.01f);
 		
 
-
+		
 		
 
 		switch (Conejo_Nivel_Alerta)
@@ -512,15 +517,17 @@ public:
 			CONEJO_ALERTA_NIVEL_4->Draw(-0.77f, 0.0f);
 			break;
 		}
-
+		
 		switch (Conejo_Estad_GUI)
 		{
 		case 1: {
 			CONEJO_ESTADO_GUI_1->Draw(-0.77f, 0.0f);
+			RenderBoxUI = false;
 			break;
 		}
 		case 2: {
 			CONEJO_ESTADO_GUI_2->Draw(-0.77f, 0.0f);
+			RenderBoxUI = true;
 			break;
 		}
 		default:
@@ -548,6 +555,12 @@ public:
 
 
 		TurnOffAlphaBlending();
+
+		if (RenderBoxUI == true)
+		{
+			CONEJO_CAJA->Draw(-0.2f, 0.0f);
+		}
+		
 
 
 		swapChain->Present( 1, 0 );
