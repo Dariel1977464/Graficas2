@@ -62,6 +62,7 @@ public:
 
 	Colisiones* CAJA;
 
+	GUI* CONEJO_BOTON_1;
 	GUI* CONEJO_ESTADO_GUI_1;
 	GUI* CONEJO_ESTADO_GUI_2;
 	GUI* CONEJO_ALERTA_NIVEL_0;
@@ -191,6 +192,7 @@ public:
 		CONEJO_ALERTA_NIVEL_4 = new GUI(d3dDevice, d3dContext, 0.5f, 0.5f, L"Assets/GUI/UI_MEDIDOR_4.png");
 
 		CONEJO_CAJA = new GUI(d3dDevice, d3dContext, 2.1f, 2.1f, L"Assets/GUI/Caja_UI.png");
+		CONEJO_BOTON_1 = new GUI(d3dDevice, d3dContext, 0.1f, 0.09f, L"Assets/GUI/ui_boton.png");
 #pragma endregion
 
 
@@ -488,7 +490,7 @@ public:
 		Texto->DrawText(0.3f, 0.0f, "PosY: " + posY.str(), 0.01f);
 		
 
-		
+		CONEJO_BOTON_1->Draw(-0.7f, -0.19f);
 		
 
 		switch (Conejo_Nivel_Alerta)
