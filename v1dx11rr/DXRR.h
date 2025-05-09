@@ -45,7 +45,8 @@ public:
 	SkyDome* skydome;
 	BillboardRR* billboard;
 	Camara* camara;
-	ModeloRR* conejo;
+	//ModeloRR* conejo;
+	ModeloRR* Policia;
 	ModeloRR* caja;
 	ModeloRR* camion;
 	ModeloRR* arbusto;
@@ -154,16 +155,19 @@ public:
 
 		skydome = new SkyDome(32, 32, 100.0f, &d3dDevice, &d3dContext, L"skydome2.jpg");
 		billboard = new BillboardRR(L"Assets/Billboards/fuego-anim.png", L"Assets/Billboards/fuego-anim-normal.png", d3dDevice, d3dContext, 5);
-		conejo = new ModeloRR(d3dDevice, d3dContext, "Assets/Conejo/CONEJO.obj", L"Assets/Conejo/CONEJO_TEXT.jpg", L"Assets/noSpecMap.jpg", 5, 0);
+		//conejo = new ModeloRR(d3dDevice, d3dContext, "Assets/Conejo/CONEJO.obj", L"Assets/Conejo/CONEJO_TEXT.jpg", L"Assets/noSpecMap.jpg", 5, 0);
+		
+		Policia = new ModeloRR(d3dDevice, d3dContext, "Assets/Policia/POLICIA.obj", L"Assets/Policia/POLICIA_TEXT.jpg", L"Assets/Policia/POLICA_ROUGH.jpg", 8, 0);
 
 		caja = new ModeloRR(d3dDevice, d3dContext, "Assets/Caja/CAJA.obj", L"Assets/Caja/CAJA_TEXT.jpg", L"Assets/Caja/CAJA_ROUGH.jpg", 10, 0);
 
 		//CAJA = new Colisiones(10.0, terreno->Superficie(0, 0) + 5.0f, 0, 10, 10);
 		
 
-		camion = new ModeloRR(d3dDevice, d3dContext, "Assets/Camion/CAMION.obj", L"Assets/Camion/CamionTEXT.jpg", L"Assets/Camion/CAMION_ROUGH.jpg", -15, -10);
+		camion = new ModeloRR(d3dDevice, d3dContext, "Assets/Camion/CAMION.obj", L"Assets/Camion/CAMION_TEXT.jpg", L"Assets/Camion/CAMION_ROUGH.jpg", -15, -10);
 		arbusto = new ModeloRR(d3dDevice, d3dContext, "Assets/Arbusto/ARBUSTO.obj", L"Assets/Arbusto/ARBUSTO_TEXT.jpg", L"Assets/noSpecMap.jpg", -25, 5);
 		basura = new ModeloRR(d3dDevice, d3dContext, "Assets/Basura/BASURA.obj", L"Assets/Basura/BASURA_TEXT.jpg", L"Assets/Basura/BASURA_ROUGH.jpg", 0, -5);
+
 		escuela = new ModeloRR(d3dDevice, d3dContext, "Assets/Escuela/escuela.obj", L"Assets/Escuela/escuela_color.png", L"Assets/Escuela/escuela_roughness.png", -270, 20);
 		casilleros = new ModeloRR(d3dDevice, d3dContext, "Assets/Casilleros/casilleros.obj", L"Assets/Casilleros/Casillero_BaseColor10.png", L"Assets/Casilleros/Casillero_Metallic100.png", -10, -45);
 		escritorio = new ModeloRR(d3dDevice, d3dContext, "Assets/Escritorio/escritorio.obj", L"Assets/Escritorio/escritorio_color.png", L"Assets/noSpecMap.jpg", 10, -25);
@@ -409,10 +413,13 @@ public:
 
 
 #pragma region MODELOS
-		conejo->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 10.0f, 0, 'A', 1);
-		caja->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 5.0f, 0, 'A', 1);
+		//conejo->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 10.0f, 0, 'A', 1);
+
+		Policia->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 10.0f, 0, 'A', 1);
+
+		caja->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 5.0f, 0, 'A', 1);
 		camion->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 5.0f, 0, 'A', 1);
-		arbusto->Draw(camara->vista, camara->proyeccion, terreno->Superficie(15, 20), camara->posCam, 10.0f, 0, 'A', 1);
+		arbusto->Draw(camara->vista, camara->proyeccion, terreno->Superficie(50, 20), camara->posCam, 10.0f, 0, 'A', 1);
 		basura->Draw(camara->vista, camara->proyeccion, terreno->Superficie(-50, -20), camara->posCam, 5.0f, 0, 'A', 1);
 		escuela->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 10.0f, 0, 'A', 4);
 		casilleros->Draw(camara->vista, camara->proyeccion, terreno->Superficie(100, 20), camara->posCam, 5.0f, 0, 'A', 3);

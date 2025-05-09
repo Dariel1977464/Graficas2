@@ -1,0 +1,68 @@
+# Blender MTL File: 'graficas modelos.blend'
+# Material Count: 6
+
+newmtl Mat_Dorado
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.763279 0.335474 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\clays\\Documents\\Semestre 10\\Graficas Computacionales 2\\POLICIA_TEXT.jpg
+
+newmtl Mat_Gorra1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\clays\\Documents\\Semestre 10\\Graficas Computacionales 2\\POLICIA_TEXT.jpg
+
+newmtl Mat_Gorra2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.045183 0.037871 0.036663
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\clays\\Documents\\Semestre 10\\Graficas Computacionales 2\\POLICIA_TEXT.jpg
+
+newmtl mat_ojos.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.460000 0.460000 0.460000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\clays\\Documents\\Semestre 10\\Graficas Computacionales 2\\POLICIA_TEXT.jpg
+
+newmtl mat_orejas.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.278793 0.040275 0.016699
+Ks 0.147273 0.147273 0.147273
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\clays\\Documents\\Semestre 10\\Graficas Computacionales 2\\POLICIA_TEXT.jpg
+
+newmtl mat_pelo.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.129091 0.129091 0.129091
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\clays\\Documents\\Semestre 10\\Graficas Computacionales 2\\POLICIA_TEXT.jpg
